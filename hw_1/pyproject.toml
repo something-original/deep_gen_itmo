@@ -1,0 +1,18 @@
+[project]
+name = "hw-1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Georgy Kiselev",email = "gsx2002@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "ipython (>=9.1.0,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
