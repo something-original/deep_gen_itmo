@@ -1,5 +1,7 @@
 from styles import styles, styles_count, priors
 import random
+import os
+from pathlib import Path
 
 class StylesGenerator():
     def __init__(self, styles_, styles_count_, priors_):
@@ -46,5 +48,7 @@ class StylesGenerator():
 if __name__ == '__main__':
     styles_generator = StylesGenerator(styles, styles_count, priors)
     n_styles = 5
+    root_path = Path(__file__).resolve().parent
     for style_no in range(1, n_styles + 1):
-        styles_generator.generate_style(f'style_{style_no}.txt')
+        file_path = os.path.join(root_path, f'style_{style_no}.txt')
+        styles_generator.generate_style(file_path)
