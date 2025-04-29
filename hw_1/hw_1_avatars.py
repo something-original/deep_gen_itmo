@@ -44,7 +44,7 @@ class AvatarGenerator():
                 'bayes': bayes_probs
             }
 
-    def generate_avatar(self, avatar_path, method='mle'):
+    def generate_avatar(self, avatar_path, method='bayes'):
         height, width = self.img_size[0], self.img_size[1]
         channels = 4 if any(np.sum(self.pixel_counts[pos][:, 3]) > 0 for pos in self.pixel_counts) else 3
         new_img = np.zeros((height, width, channels), dtype=np.uint8)
@@ -72,4 +72,4 @@ if __name__ == '__main__':
 
     n = 2
     for i in range(1, n+1):
-        generator.generate_avatar(os.path.join(root_dir, f'test_avatar{i}.png'))
+        generator.generate_avatar(os.path.join(root_dir, f'test_avatar_bayes{i}.png'))
