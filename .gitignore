@@ -4,6 +4,7 @@ catboost_info
 *.code-workspace
 logs/
 *.flake8
+hw_2/img_align_celeba.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
