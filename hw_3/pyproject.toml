@@ -1,0 +1,28 @@
+[project]
+name = "hw-3"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Georgy Kiselev",email = "gsx2002@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ninja (>=1.11.1.4,<2.0.0.0)",
+    "cmake (>=4.0.2,<5.0.0)",
+    "dlib (>=19.24.9,<20.0.0)",
+    "imageio-ffmpeg (>=0.6.0,<0.7.0)",
+    "lpips (>=0.1.4,<0.2.0)",
+    "pytorch-msssim (>=1.0.0,<2.0.0)",
+    "torch (>=2.7.0,<3.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)",
+    "pillow (>=11.2.1,<12.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
